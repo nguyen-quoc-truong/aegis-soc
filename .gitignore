@@ -1,0 +1,53 @@
+#Quartus: file sinh ra khi biên dịch
+db/
+incremental_db/
+output_files/
+greybox_tmp/
+hc_output/
+qdb/
+tmp-clearbox/
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.done
+*.bak
+*.qarlog
+*.sld
+c5_pin_model_dump.txt
+PLLJ_PLLSPE_INFO.txt
+
+#Platform Designer: thư mục sinh ra khi Generate
+.qsys_edit/
+hw/quartus/aegis_system/synthesis/
+hw/quartus/aegis_system/simulation/
+hw/quartus/aegis_system/testbench/
+*.sopcinfo
+
+#ModelSim
+work/
+transcript
+*.wlf
+*.vstf
+modelsim.ini
+
+#Nios II (Eclipse / BSP)
+.metadata/
+*.elf
+*.objdump
+*.map
+obj/
+sw/*_bsp/*
+!sw/*_bsp/settings.bsp
+!sw/*_bsp/*.tcl
+
+#Python
+__pycache__/
+*.pyc
+venv/
+*.csv
+
+#Hệ điều hành / editor
+.vscode/
+Thumbs.db
+.DS_Store
