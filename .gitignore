@@ -19,9 +19,7 @@ PLLJ_PLLSPE_INFO.txt
 
 #Platform Designer: thư mục sinh ra khi Generate
 .qsys_edit/
-hw/quartus/aegis_system/synthesis/
-hw/quartus/aegis_system/simulation/
-hw/quartus/aegis_system/testbench/
+hw/quartus/aegis_system/
 *.sopcinfo
 
 #ModelSim
@@ -37,9 +35,10 @@ modelsim.ini
 *.objdump
 *.map
 obj/
+hw/quartus/software/*_bsp/*
+!hw/quartus/software/*_bsp/settings.bsp
 sw/*_bsp/*
 !sw/*_bsp/settings.bsp
-!sw/*_bsp/*.tcl
 
 #Python
 __pycache__/
@@ -51,3 +50,10 @@ venv/
 .vscode/
 Thumbs.db
 .DS_Store
+
+#Quartus: netlist mô phỏng tự sinh
+hw/quartus/simulation/
+
+#Eclipse: file rác
+RemoteSystemsTempFiles/
+.settings/
