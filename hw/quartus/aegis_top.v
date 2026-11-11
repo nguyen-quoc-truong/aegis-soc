@@ -1,7 +1,7 @@
 module aegis_top(
 	input CLOCK_50,
 	input [3:0] KEY,
-	input [3:0] SW,
+	input [9:0] SW,
 	output [9:0] LEDR
 );
 
