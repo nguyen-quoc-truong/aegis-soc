@@ -26,7 +26,6 @@ The PWM output is wired back to an ADC input (loopback), so the system can measu
 | Application | On-board display (OLED, HEX, LEDR) and a Python PC application for monitoring and setpoint control |
 
 ## 3. System Overview
-![System overview](docs/images/system_overview.png)
 Detailed register definitions: [docs/register_map.md](docs/register_map.md)
 
 ## 4. Progress
@@ -77,6 +76,7 @@ vsim -do run_<module>.do
 | 3 | Lê Văn Tiềm | 20200359 |
 | 4 | Nguyễn Hoàng Tùng | 19200559 |
 | 5 | Nguyễn Quốc Trường | 22200172 |
+
 Task assignment will be added once the group has finalized it.
 
 ## 8. Contributing

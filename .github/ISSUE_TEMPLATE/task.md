@@ -1,34 +1,17 @@
-\---
-
+---
 name: Task
-
 about: A unit of work for the AEGIS project
-
-title: "\[TASK] "
-
+title: "[TASK] "
 labels: task
-
 assignees: ''
+---
 
-\---
-
-
-
-\## Description
-
+## Description
 <!-- What needs to be done? -->
 
+## Acceptance Criteria
+- [ ] 
+- [ ] 
 
-
-\## Acceptance Criteria
-
-\- \[ ] 
-
-\- \[ ] 
-
-
-
-\## References
-
+## References
 <!-- Register map section, datasheet page, related issues -->
-

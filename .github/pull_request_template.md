@@ -1,42 +1,21 @@
-\## Summary
-
+## Summary
 <!-- What does this PR do and why? -->
 
+## Changes
+- 
 
-
-\## Changes
-
-\- 
-
-
-
-\## Related Issue
-
+## Related Issue
 Closes #
 
+## Verification
+- [ ] Simulation: `__ PASS, __ FAIL`
+- [ ] Compiled in Quartus without errors
+- [ ] Tested on board (if applicable)
 
-
-\## Verification
-
-\- \[ ] Simulation: `\_\_ PASS, \_\_ FAIL`
-
-\- \[ ] Compiled in Quartus without errors
-
-\- \[ ] Tested on board (if applicable)
-
-
-
-\## Screenshots
-
+## Screenshots
 <!-- Waveforms, console output, photos -->
 
-
-
-\## Checklist
-
-\- \[ ] Follows `CONTRIBUTING.md`
-
-\- \[ ] Documentation updated
-
-\- \[ ] `CHANGELOG.md` updated
-
+## Checklist
+- [ ] Follows `CONTRIBUTING.md`
+- [ ] Documentation updated
+- [ ] `CHANGELOG.md` updated

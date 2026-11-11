@@ -1,48 +1,24 @@
-\---
-
+---
 name: Bug report
-
 about: Report incorrect behavior in RTL, firmware or application
-
-title: "\[BUG] "
-
+title: "[BUG] "
 labels: bug
-
 assignees: ''
+---
 
-\---
-
-
-
-\## Description
-
+## Description
 <!-- What is wrong? -->
 
+## Steps to Reproduce
+1. 
+2. 
 
+## Expected Behavior
 
-\## Steps to Reproduce
+## Actual Behavior
 
-1\. 
+## Environment
+- Simulation / Board:
+- Commit or branch:
 
-2\. 
-
-
-
-\## Expected Behavior
-
-
-
-\## Actual Behavior
-
-
-
-\## Environment
-
-\- Simulation / Board:
-
-\- Commit or branch:
-
-
-
-\## Logs / Screenshots
-
+## Logs / Screenshots
