@@ -13,6 +13,7 @@ module ltc2308_model
     reg [2:0] received_bit_count;
     reg [2:0] conversion_channel;
     reg [11:0] output_shift_register;
+    reg conversion_in_progress;
     time conversion_start_time;
 
     assign oSDO = output_shift_register[11];
@@ -24,6 +25,7 @@ module ltc2308_model
         conversion_channel = 3'd0;
         output_shift_register = 12'd0;
         conversion_start_time = 0;
+        conversion_in_progress = 1'b0;
     end
     function [2:0] decode_channel;
         input [5:0] configuration;
@@ -43,6 +45,7 @@ module ltc2308_model
         previous_configuration = received_configuration;
         conversion_channel = decode_channel(received_configuration);
         conversion_start_time = $time;
+        conversion_in_progress = 1'b1;
         received_bit_count = 3'd0;
         if (received_configuration[5] != 1'b1 || received_configuration[1] != 1'b1)
         begin
@@ -51,11 +54,15 @@ module ltc2308_model
     end
     always @(negedge iCONVST)
     begin
-        if ($time - conversion_start_time < MINIMUM_CONVERSION_TIME_NANOSECONDS)
+        if (conversion_in_progress)
         begin
-            $display("[%0t] LTC2308 MODEL ERROR: CONVST high for %0t ns, minimum is %0d ns", $time, $time - conversion_start_time, MINIMUM_CONVERSION_TIME_NANOSECONDS);
+            if ($time - conversion_start_time < MINIMUM_CONVERSION_TIME_NANOSECONDS)
+            begin
+                $display("[%0t] LTC2308 MODEL ERROR: CONVST high for %0t ns, minimum is %0d ns", $time, $time - conversion_start_time, MINIMUM_CONVERSION_TIME_NANOSECONDS);
+            end
+            output_shift_register = sample_for_channel(conversion_channel);
+            conversion_in_progress = 1'b0;
         end
-        output_shift_register = sample_for_channel(conversion_channel);
     end
     always @(posedge iSCK)
     begin
