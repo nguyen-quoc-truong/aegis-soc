@@ -3,7 +3,7 @@
 | Item | Value |
 |---|---|
 | IP name | `aegis_data_acquisition_controller` |
-| Document version | 1.0 |
+| Document version | 1.1 |
 | Status | Frozen (changes require group approval through a pull request) |
 | Target | DE10-Standard board (Cyclone V 5CSXFC6D6F31C6), Nios II processor |
 | Clock | 50 MHz, single clock domain |
@@ -13,7 +13,7 @@
 | Version | Date | Author | Changes |
 |---|---|---|---|
 | 1.0 | 2026-11-15 | AEGIS group | Initial frozen register map |
-
+| 1.1 | 2026-11-16 | AEGIS group | SCK frequency changed to 12.5 MHz so one frame fits in the minimum sample period |
 ---
 
 ## 1. Overview
@@ -45,7 +45,7 @@
 | Signal | Direction | Width | Description |
 |---|---|---|---|
 | `adc_convst` | Output | 1 | LTC2308 CONVST pin |
-| `adc_sck` | Output | 1 | LTC2308 SCK pin (2.5 MHz) |
+| `adc_sck` | Output | 1 | LTC2308 SCK pin (12.5 MHz) |
 | `adc_sdi` | Output | 1 | LTC2308 SDI pin (configuration word) |
 | `adc_sdo` | Input | 1 | LTC2308 SDO pin (conversion data) |
 | `pwm_out` | Output | 4 | PWM outputs, channel 0 to 3 |

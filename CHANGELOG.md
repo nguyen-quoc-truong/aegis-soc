@@ -10,6 +10,7 @@ All notable changes to this project are documented in this file. The format foll
 - C register header `aegis_data_acquisition_controller_registers.h`
 - Team roles and responsibilities in README
 - Naming rule (full words, no abbreviations) in CONTRIBUTING
+- ltc2308_spi_controller with LTC2308 behavioral model and self-checking testbench (18 test cases)
 
 ### Changed
 
@@ -18,6 +19,7 @@ All notable changes to this project are documented in this file. The format foll
 - Rename the `aegis_system` instance in `aegis_top` to `aegis_system_instance`
 - Update the board support package settings and the base test application for the new names
 - Rewrite README and CONTRIBUTING with the new directory structure
+- Register map version 1.1: SCK frequency changed from 2.5 MHz to 12.5 MHz
 
 ## [0.1.0] - 2026-11-11
 
