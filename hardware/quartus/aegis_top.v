@@ -4,12 +4,10 @@ module aegis_top(
 	input [9:0] SW,
 	output [9:0] LEDR
 );
-
-	aegis_system u0(
-		.clk_clk	(CLOCK_50),
+	aegis_system aegis_system_instance(
+		.clock_clk	(CLOCK_50),
 		.reset_reset_n	(KEY[0]),
-		.led_external_connection_export (LEDR),
-		.sw_external_connection_export (SW)
+		.led_export (LEDR),
+		.switch_export (SW)
 	);
-
 endmodule
