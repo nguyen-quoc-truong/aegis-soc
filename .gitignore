@@ -18,11 +18,11 @@ c5_pin_model_dump.txt
 PLLJ_PLLSPE_INFO.txt
 
 # ===== Quartus generated simulation netlists =====
-hw/quartus/simulation/
+hardware/quartus/simulation/
 
 # ===== Platform Designer generated files =====
 .qsys_edit/
-hw/quartus/aegis_system/
+hardware/quartus/aegis_system/
 *.sopcinfo
 
 # ===== ModelSim =====
@@ -40,8 +40,8 @@ RemoteSystemsTempFiles/
 *.objdump
 *.map
 obj/
-hw/quartus/software/*_bsp/*
-!hw/quartus/software/*_bsp/settings.bsp
+hardware/quartus/software/*_bsp/*
+!hardware/quartus/software/*_bsp/settings.bsp
 
 # ===== Python =====
 __pycache__/

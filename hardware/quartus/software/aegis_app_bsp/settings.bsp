@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Oct 28, 2026 3:28:25 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1793176105806</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\HP\Documents\SOC_Design\aegis-soc\hw\quartus\software\aegis_app_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspGeneratedTimeStamp>Nov 16, 2026 2:40:45 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1794814845702</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\HP\Documents\SOC_Design\aegis-soc\hardware\quartus\software\aegis_app_bsp</BspGeneratedLocation>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\aegis_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>
@@ -146,7 +146,7 @@
                 <SettingName>hal.linker.exception_stack_memory_region_name</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>onchip_mem</Value>
+                <Value>onchip_memory</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'exception_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'exception_stack' memory region.</Description>
@@ -182,7 +182,7 @@
                 <SettingName>hal.linker.interrupt_stack_memory_region_name</SettingName>
                 <Identifier>none</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>onchip_mem</Value>
+                <Value>onchip_memory</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Name of the existing memory region that will be divided up to create the 'interrupt_stack' memory region. The selected region name will be adjusted automatically when the BSP is generated to create the 'interrupt_stack' memory region.</Description>
@@ -899,13 +899,13 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>onchip_mem</slaveDescriptor>
+                <slaveDescriptor>onchip_memory</slaveDescriptor>
                 <addressRange>0x00020000 - 0x0003FFFF</addressRange>
                 <addressSpan>131072</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sw</slaveDescriptor>
+                <slaveDescriptor>switch</slaveDescriptor>
                 <addressRange>0x00041000 - 0x0004100F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
@@ -924,26 +924,26 @@
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rwdata</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.bss</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.heap</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.stack</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>onchip_memory</regionName>
         </LinkerSection>
 </sch:Settings>
