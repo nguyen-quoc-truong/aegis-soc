@@ -23,6 +23,10 @@ All notable changes to this project are documented in this file. The format foll
 - Rewrite README and CONTRIBUTING with the new directory structure
 - Register map version 1.1: SCK frequency changed from 2.5 MHz to 12.5 MHz
 
+### Fixed
+
+- `synchronous_fifo`: default `ADDRESS_WIDTH` changed from 9 to 8 to match `DEPTH` = 256; testbench now uses the default parameters
+
 ## [0.1.0] - 2026-11-11
 
 ### Added
