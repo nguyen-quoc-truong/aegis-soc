@@ -2,7 +2,7 @@ module synchronous_fifo
 #(
     parameter DEPTH = 256,
     parameter WIDTH = 15,
-    parameter ADDRESS_WIDTH = 9
+    parameter ADDRESS_WIDTH = 8
 )(
     input   iClock,
     input   iReset_n,
@@ -26,7 +26,13 @@ module synchronous_fifo
     assign oFull = (count == DEPTH);
     assign oHalfFull = (count >= DEPTH/2);
     assign oReadData = oEmpty ? {WIDTH{1'b0}} : memory[read_pointer];
-    
+    initial
+    begin
+        if ((1<<ADDRESS_WIDTH) != DEPTH)
+        begin
+            $display("ERROR synchronous_fifo: DEPTH (%0d) must equal 2^ADDRESS_WIDTH (%0d)", DEPTH, 1 << ADDRESS_WIDTH);
+        end
+    end
     always @(posedge iClock, negedge iReset_n)
     begin
         if (~iReset_n)

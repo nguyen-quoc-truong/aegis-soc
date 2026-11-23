@@ -19,11 +19,7 @@ module tb_synchronous_fifo();
     integer order_errors;
     reg [WIDTH-1:0] read_value;
 
-    synchronous_fifo #(
-        .DEPTH (DEPTH),
-        .WIDTH (WIDTH),
-        .ADDRESS_WIDTH (8)
-    ) device_under_test(
+    synchronous_fifo device_under_test(
         .iClock (clock),
         .iReset_n (reset_n),
         .iWriteEnable (write_enable),
