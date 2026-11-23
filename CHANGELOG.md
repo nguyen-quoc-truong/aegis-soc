@@ -10,7 +10,8 @@ All notable changes to this project are documented in this file. The format foll
 - C register header `aegis_data_acquisition_controller_registers.h`
 - Team roles and responsibilities in README
 - Naming rule (full words, no abbreviations) in CONTRIBUTING
-- ltc2308_spi_controller with LTC2308 behavioral model and self-checking testbench (18 test cases)
+- `ltc2308_spi_controller` with LTC2308 behavioral model and self-checking testbench (18 test cases)
+- `averager` (2^N sample average using accumulate and shift) with self-checking testbench (15 test cases)
 
 ### Changed
 
@@ -29,7 +30,6 @@ All notable changes to this project are documented in this file. The format foll
 - Platform Designer system `aegis_system`: Nios II/e processor, 128 KB on-chip memory, JTAG UART, 10-bit LED and switch parallel input/output
 - Nios II base test application (LED chaser)
 - Repository standards: README, contributing guidelines, changelog, pull request and issue templates
-- `averager` (2^N sample average using accumulate and shift) with self-checking testbench (15 test cases)
 
 ### Fixed
 
