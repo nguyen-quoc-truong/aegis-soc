@@ -13,6 +13,7 @@ All notable changes to this project are documented in this file. The format foll
 - `ltc2308_spi_controller` with LTC2308 behavioral model and self-checking testbench (18 test cases)
 - `averager` (2^N sample average using accumulate and shift) with self-checking testbench (15 test cases)
 - `synchronous_fifo` (256 entries, show-ahead read) with self-checking testbench (20 test cases)
+- `pwm_generator` (glitch-free period and duty update, force-off input) with self-checking testbench (10 test cases)
 
 ### Changed
 
