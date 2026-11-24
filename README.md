@@ -79,11 +79,11 @@ vsim -do run_<module>.do
 
 | Number | Name | Student ID | Role | Responsibility |
 |---|---|---|---|---|
-| 1 | Nguyễn Quốc Trường | 22200172 | ADC interface | `ltc2308_spi_controller`, LTC2308 behavioral model, repository maintainer |
-| 2 | Nguyễn Hoàng Tùng | 19200559 | Data path | `averager`, `synchronous_fifo` |
-| 3 | Giang Trọng Nhân | 22200112 | Output and protection | `pwm_generator`, `fault_controller` |
-| 4 | Phạm Hoàng Gia Bảo | 21200270 | IP top-level | `aegis_data_acquisition_controller` top-level, Avalon interface, top-level testbench |
-| 5 | Lê Văn Tiềm | 20200359 | System integration | Base system extension, IP packaging, firmware drivers, lab preparation |
+| 1 | Nguyễn Hoàng Tùng | 19200559 | Data path | `averager`, `synchronous_fifo` |
+| 2 | Lê Văn Tiềm | 20200359 | System integration | Base system extension, IP packaging, firmware drivers, lab preparation |
+| 3 | Phạm Hoàng Gia Bảo | 21200270 | IP top-level | `aegis_data_acquisition_controller` top-level, Avalon interface, top-level testbench |
+| 4 | Nguyễn Quốc Trường | 22200172 | ADC interface | `ltc2308_spi_controller`, LTC2308 behavioral model, repository maintainer |
+| 5 | Giang Trọng Nhân | 22200112 | Output and protection | `pwm_generator`, `fault_controller` |
 
 Roles cover Phase 2 (IP design). Assignments for later phases will be updated in this table.
 
